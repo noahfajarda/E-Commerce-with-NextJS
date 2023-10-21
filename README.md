@@ -12,6 +12,7 @@ tech used:
 - clerk authentication == https://dashboard.clerk.com/sign-up
   - purpose = secure application authentication with easy setup
   - signed in with github
+- zustand == state management
 
 concepts:
 
