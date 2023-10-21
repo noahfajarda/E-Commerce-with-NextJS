@@ -1,0 +1,2 @@
+installation docs = https://clerk.com/docs/quickstarts/nextjs
+main dashboard = https://dashboard.clerk.com/apps/app_2X5e3NKM3Syskd9xT3f6vO9UwDd/instances/ins_2X5e3Lc5Wj1OcDmdJZbUUAM7IJc?
