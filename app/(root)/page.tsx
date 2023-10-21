@@ -1,6 +1,12 @@
+import { UserButton } from "@clerk/nextjs";
+
 // this is the root url
 export default function SetupPage() {
-  return <div className="p-4">This is a protected route!</div>;
+  return (
+    <div className="p-4">
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
 }
 
 // {/* LOOK AT DOCUMENTATION FOR shadcn-ui */}

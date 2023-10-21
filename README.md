@@ -10,6 +10,7 @@ tech used:
   - installation == npx shadcn-ui@latest init
   - add components == npx shadcn-ui@latest add button == will add 'button' component to 'components' folder
 - clerk authentication == https://dashboard.clerk.com/sign-up
+  - purpose = secure application authentication with easy setup
   - signed in with github
 
 concepts:
