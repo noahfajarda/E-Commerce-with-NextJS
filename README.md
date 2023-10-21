@@ -8,3 +8,8 @@ tech used:
 - prisma
 - shadcn/ui == https://ui.shadcn.com/ == component library
   - installation == npx shadcn-ui@latest init
+  - add components == npx shadcn-ui@latest add button == will add 'button' component to 'components' folder
+
+concepts:
+
+- route grouping == used to organize paths and components without affecting URLs
