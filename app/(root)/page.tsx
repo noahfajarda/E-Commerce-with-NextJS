@@ -1,22 +1,18 @@
 "use client";
 
-import { Modal } from "@/components/ui/modal";
+import { useEffect } from "react";
+import { useStoreModal } from "@/hooks/use-store-modal";
 
 // this is the root url
 export default function SetupPage() {
-  return (
-    <div className="p-4">
-      <Modal title="Test" description="Test Desc" isOpen onClose={() => {}}>
-        Children
-      </Modal>
-    </div>
-  );
-}
+  const onOpen = useStoreModal((state) => state.onOpen);
+  const isOpen = useStoreModal((state) => state.isOpen);
 
-// {/* LOOK AT DOCUMENTATION FOR shadcn-ui */}
-// import { Button } from "@/components/ui/button";
-//       {/* size: adjust size */}
-//       {/* variant: adjust color */}
-//       <Button size="default" variant="destructive">
-//         Click Me
-//       </Button>
+  useEffect(() => {
+    if (!isOpen) {
+      onOpen();
+    }
+  }, [isOpen, onOpen]);
+
+  return <div className="p-4">Root Page</div>;
+}
